@@ -1,0 +1,22 @@
+.header-container{
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+}
+.logo-menu{
+    display: flex;
+    flex-direction: row;
+}
+.cart-profile{
+    display: flex;
+    flex-direction: row;
+}
+.menu{
+    padding: 0 20px;
+}
+.profile{
+    padding: 0 20px;
+}
