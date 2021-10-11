@@ -3,19 +3,23 @@ const PlusMinusCartPrice = (props) => {
   return (
     <div className="container">
       <Price/>
+      <div className="logicbuttons">
       <PlusMinus/>
       <AddCart/>
+      </div>
     </div>
   );
 };
 const Price = (props) => {
     return (
       <div className="price-container">
+        <div className="pdis">
         <div className="price">
         <p>$125.00</p>
         </div>
         <div className="discount">
         <p>50%</p>
+        </div>
         </div>
         <div className="old-price">
         <p>$250.00</p>

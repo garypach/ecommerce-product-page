@@ -3,12 +3,30 @@ const Header = () =>{
     return(
         <div className="header-container">
         <div className="logo-menu">
-        
         <div className="menu">
         <Image src='/../public/assests/images/icon-menu.svg' height={15} width={20}/>
         </div>
         <div className="logo">
         <Image src='/../public/assests/images/logo.svg' height={20} width={100}/>
+        </div>
+        <div className="nav-menu">
+            <ul>
+                <li>
+                    Collections
+                </li>
+                <li>
+                    Men
+                </li>
+                <li>
+                    Women
+                </li>
+                <li>
+                    About
+                </li>
+                <li>
+                    Contact
+                </li>
+            </ul>
         </div>
         </div>
         <div className="cart-profile">
