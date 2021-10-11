@@ -1,5 +1,6 @@
 .image-container{
-    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
     height: 300px;
     position: relative;
 
@@ -8,17 +9,46 @@
     width: 500px;
     height: 300px;
 }
-.image-container .arrows{
-    width: 100%;
+
+.arrows{
     display: flex;
-    justify-content: space-between;
     position: absolute;
+    justify-content: space-between;
+    width: 100%;
     top: 50%;
+    padding: 0 15px;
 }
-.arrows img{
-    width: 50px;
-    height: 50px;
+.prev-arrow{
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    border: white solid 1px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
 }
-.arrows img:hover{
-   cursor: pointer;
+.prev-arrow img{
+    width: 10px;
+    height: 10px;
 }
+.prev-arrow img:hover{
+    cursor: pointer;
+ }
+ .next-arrow{
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    border: white solid 1px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.next-arrow img{
+    width: 10px;
+    height: 10px;
+}
+.next-arrow img:hover{
+    cursor: pointer;
+ }

@@ -5,7 +5,7 @@ const Header = () =>{
         <div className="logo-menu">
         
         <div className="menu">
-        <Image src='/../public/assests/images/icon-menu.svg' height={20} width={20}/>
+        <Image src='/../public/assests/images/icon-menu.svg' height={15} width={20}/>
         </div>
         <div className="logo">
         <Image src='/../public/assests/images/logo.svg' height={20} width={100}/>

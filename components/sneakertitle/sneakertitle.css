@@ -1,0 +1,17 @@
+.sneakertitle-container{
+    margin: 0 auto;
+    margin-top: 25px;
+    max-width: 375px;
+    padding-left: 20px;
+
+}
+.company{
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(26, 100%, 55%);
+}
+.sneaker-title{
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 700;
+}
