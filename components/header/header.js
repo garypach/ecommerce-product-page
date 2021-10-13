@@ -1,11 +1,10 @@
 import Image from 'next/image'
+import SideBar from '../sidebar/sidebar';
 const Header = () =>{
     return(
         <div className="header-container">
         <div className="logo-menu">
-        <div className="menu">
-        <Image src='/../public/assests/images/icon-menu.svg' height={15} width={20}/>
-        </div>
+        <SideBar/>
         <div className="logo">
         <Image src='/../public/assests/images/logo.svg' height={20} width={100}/>
         </div>

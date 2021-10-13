@@ -1,13 +1,13 @@
 .image-container{
     max-width: 375px;
     margin: 0 auto;
-    height: 300px;
+    height: 350px;
     position: relative;
 
 }
 .image-container img{
     width: 500px;
-    height: 300px;
+    height: 350px;
 }
 
 .arrows{
@@ -55,8 +55,16 @@
  .image-row{
      display: none;
  }
-
+.img-desktop{
+    display: none;
+}
  @media only screen and (min-width: 1024px) {
+     .img-mobile{
+         display: none;
+     }
+     .img-desktop{
+         display: block;
+     }
     .image-container{
         max-width: 444px;
         margin: 0 auto;
@@ -120,7 +128,6 @@
      .image-row{
         display: flex;
         margin-top: 20px;
-
     }
     
     .image-row img{
@@ -134,5 +141,22 @@
       cursor: pointer;
       border: 2px solid hsl(26, 100%, 55%) !important;
 
+    }
+    #overlay {
+        position: fixed; /* Sit on top of the page content */
+        display: none; /* Hidden by default */
+        width: 100%; /* Full width (cover the whole page) */
+        height: 100%; /* Full height (cover the whole page) */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+        z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+        cursor: pointer; /* Add a pointer on hover */
+      }
+    .image-row .active{
+        opacity: .65;
+        border: 2px solid hsl(26, 100%, 55%) !important;
     }
 }

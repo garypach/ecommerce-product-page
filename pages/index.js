@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import Header from '../components/header/header'
 import Product from '../components/product/product'
+import SimpleReactLightbox from 'simple-react-lightbox'
+import { useState } from 'react'
 export default function Home() {
+  
   return (
     <div>
       <Head>
@@ -14,7 +17,9 @@ export default function Home() {
 
       </Head>
       <Header/>
+      <SimpleReactLightbox>
       <Product/>
+      </SimpleReactLightbox>
     </div>
   )
 }

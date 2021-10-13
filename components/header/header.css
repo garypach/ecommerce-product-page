@@ -10,23 +10,21 @@
 }
 .logo-menu{
     align-items: center;
-
     display: flex;
     margin: auto 0;
     flex-direction: row;
 }
-.logo-menu ul{
+.logo-menu .nav-menu{
     display: none;
 }
+
 .cart-profile{
     align-items: center;
     margin: auto 0;
     display: flex;
     flex-direction: row;
 }
-.menu{
-    padding: 0 20px;
-}
+
 .profile{
     padding: 0 20px;
 }
@@ -52,12 +50,27 @@
         .logo-menu ul{
             display: flex;
             margin-left: 30px ;
+            align-items: center;
+
         }
         .logo-menu ul li{
             color: hsl(219, 9%, 45%);
             margin: 0 20px;
+            max-height: 570px;
+            height: 130px;
+            padding-top: 60px;
             cursor: pointer;
+          
+            
         }
+        .logo-menu ul li:hover{
+            border-bottom: 5px solid orange;
+            
+        }
+        .logo-menu .nav-menu{
+            display: block;
+        }
+        
         .cart-profile{
             align-items: center;
             margin: auto 0;
@@ -77,5 +90,11 @@
         }
         .profile img{
             width: 50px;
+        }
+        .mobile-menu{
+            display:none !important;
+        }
+        .mobile-active{
+            display: none !important;
         }
     }
