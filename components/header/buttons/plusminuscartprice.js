@@ -16,7 +16,7 @@ const PlusMinusCartPrice = ({product}) => {
             {itemCount}
             </div>
             <div className="plus" onClick={()=>inc()}>
-            <Image onClick={()=>inc()} src='/icon-plus.svg' height='15px' width='15px' alt="plus"/>
+            <Image src='/icon-plus.svg' height='15px' width='15px' alt="plus"/>
             </div>
         </div>
       

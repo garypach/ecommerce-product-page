@@ -5,13 +5,13 @@ const CartReducer = (state, action) => {
     case INC: {
       return {
         ...state,
-        itemCount: state.itemCount++
+        itemCount: state.itemCount + 1
       };
     }
     case DEC: {
       return {
         ...state,
-        itemCount: state.itemCount--
+        itemCount: state.itemCount - 1
       };
     }
 

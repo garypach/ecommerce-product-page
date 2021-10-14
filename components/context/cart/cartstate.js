@@ -26,13 +26,14 @@ const CartState = ({ children }) => {
     dispatch({ type: REMOVE_ITEM, payload: id });
   };
 
-  const inc = (e) => {
+  const inc = () => {
     dispatch({ type: INC});
-    console.log(e)
+    console.log('+')
   };
   const dec = (itemcount) => {
     if(itemcount !== 0){
       dispatch({ type: DEC});
+      console.log('-')
     }
   };
   return (
