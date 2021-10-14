@@ -8,7 +8,7 @@ const CartItem = ({ item }) => {
   let opts = { format: "%s%v", symbol: "$" };
   return (
     <li className='CartItem__item'>
-            <Image src={`/../public/${item.image}`} height='50px' width='50px' alt={`${item.image}`}/>
+            <Image src={`/${item.image}`} height='50px' width='50px' alt={`${item.image}`}/>
       <div className="cart-desc">
         <div>
 
@@ -16,11 +16,11 @@ const CartItem = ({ item }) => {
         </div>
         <div>
           {formatCurrency(`${item.price}`, opts)}
-          </div>
+        </div>
       </div>
       
       <div className="CartItem__button" onClick={() => removeItem(item._id)}>
-        <Image src='/../public/icon-delete.svg' height={20} width={20}/>
+        <Image src='/icon-delete.svg' height={20} width={20}/>
         </div>      
     </li>
   );

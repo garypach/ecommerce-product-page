@@ -10,7 +10,7 @@ const Header = () =>{
         <div className="logo-menu">
         <SideBar/>
         <div className="logo">
-        <Image src='/../public/logo.svg' height={20} width={100}/>
+        <Image src='/logo.svg' height={20} width={100}/>
         </div>
         <div className="nav-menu">
             <ul>
@@ -34,12 +34,12 @@ const Header = () =>{
         </div>
         <div className="cart-profile">
         <div className="cart" onClick={showHideCart}>
-        <Image src='/../public/icon-cart.svg' height={20} width={20}/>
+        <Image src='/icon-cart.svg' height={20} width={20}/>
         {cartItems.length > 0 && <div className="itemscount">{cartItems.length}</div>}
         <Cart/>
         </div>
         <div className="profile">
-        <Image src='/../public/image-avatar.png' height={30} width={30}/>
+        <Image src='/image-avatar.png' height={30} width={30}/>
         </div>
         </div>
     </div>

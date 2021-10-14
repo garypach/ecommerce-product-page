@@ -67,8 +67,8 @@ const ImageBox = () =>{
     return(
     <div className="image-container">
         <SRLWrapper options={options}>
-            <a className="img-desktop" href={`/../public/${selectedImage.imageName}`}>
-            <Image src={`/../public/${selectedImage.imageName}`} height='1000px' width='1000px' alt={`${selectedImage.tag}`}/>
+            <a className="img-desktop" href={`/${selectedImage.imageName}`}>
+            <Image src={`/${selectedImage.imageName}`} height='1000px' width='1000px' alt={`${selectedImage.tag}`}/>
         </a>
         </SRLWrapper>
         {desktopimages.map((slide, index) => {
@@ -78,17 +78,17 @@ const ImageBox = () =>{
             key={index}
           >
             {index === current && (
-             <Image src={`/../public/${slide.imageName}`} height='1000px' width='1000px' alt={`${slide.imageName}`}/>
+             <Image src={`/${slide.imageName}`} height='1000px' width='1000px' alt={`${slide.imageName}`}/>
             )}
           </div>
         );
       })}
         <div className="arrows">
             <div className="prev-arrow" onClick={prevSlide}>
-            <Image src='/../public/icon-previous.svg' height='20px' width='20px' alt="product"/>
+            <Image src='/icon-previous.svg' height='20px' width='20px' alt="product"/>
             </div>
             <div className="next-arrow" onClick={nextSlide}>
-            <Image src='/../public/icon-next.svg' height='20px' width='20px' alt="product"/>
+            <Image src='/icon-next.svg' height='20px' width='20px' alt="product"/>
             </div>
         </div>
         <div className="image-row">
@@ -103,7 +103,7 @@ const ImageBox = () =>{
   
 }
 const TagImage = ({number,handleSetTag,tagActive}) =>{
-    return <div className="single"><Image srl_gallery_image="true" className={`tag ${tagActive ? 'active' : null}`} onClick={ () => handleSetTag(number)} src={`/../public/image-product-${number + 1 }-thumbnail.jpg`} height='100%' width='1000px' alt="product"/>
+    return <div className="single"><Image srl_gallery_image="true" className={`tag ${tagActive ? 'active' : null}`} onClick={ () => handleSetTag(number)} src={`/image-product-${number + 1 }-thumbnail.jpg`} height='100%' width='1000px' alt="product"/>
             </div>
 }
 
