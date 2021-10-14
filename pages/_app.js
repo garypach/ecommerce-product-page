@@ -2,12 +2,7 @@ import CartState from '../components/context/cart/cartstate'
 import '../styles/styles.css'
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <CartState>
-    <Component {...pageProps} />
-    </CartState>
-    
-  )
+  return <Component {...pageProps} />
 }
 
 export default MyApp
