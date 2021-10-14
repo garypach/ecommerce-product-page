@@ -3,7 +3,10 @@ import '../styles/styles.css'
 
 function MyApp({ Component, pageProps }) {
   return (
+    <CartState>
     <Component {...pageProps} />
+    </CartState>
+    
   )
 }
 
