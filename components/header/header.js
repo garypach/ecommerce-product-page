@@ -1,7 +1,11 @@
 import Image from 'next/image'
 import SideBar from '../sidebar/sidebar';
+import CartContext from '../context/cart/cartcontext';
+import { useContext } from 'react';
+import Cart from '../cartbox/cartbox';
 const Header = () =>{
-    return(
+    const { cartItems, showHideCart } = useContext(CartContext);
+        return(
         <div className="header-container">
         <div className="logo-menu">
         <SideBar/>
@@ -29,8 +33,10 @@ const Header = () =>{
         </div>
         </div>
         <div className="cart-profile">
-        <div className="cart">
+        <div className="cart" onClick={showHideCart}>
         <Image src='/../public/assests/images/icon-cart.svg' height={20} width={20}/>
+        {cartItems.length > 0 && <div className="itemscount">{cartItems.length}</div>}
+        <Cart/>
         </div>
         <div className="profile">
         <Image src='/../public/assests/images/image-avatar.png' height={30} width={30}/>

@@ -1,4 +1,16 @@
 
+@media only screen and (min-width: 768px) {
+    .product-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-height: 570px;
+        max-width: 768px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 10%;
+    }
+}
 @media only screen and (min-width: 1024px) {
     .product-container{
         display: flex;
