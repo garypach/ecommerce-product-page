@@ -8,11 +8,11 @@ const SideBar = () => {
     return (
       <nav>
         <div className="menu" onClick={toggle}>
-        <Image src='/../public/assests/images/icon-menu.svg' height={15} width={20}/>
+        <Image src='/../public/images/icon-menu.svg' height={15} width={20}/>
         </div>
         <ul onClick ={hide} className={`mobile-menu ${isOpen ? 'mobile-active' : ''}`}>
         <li> <div className="close-menu" onClick={toggle}>
-        <Image src='/../public/assests/images/icon-close.svg' height={16} width={16}/>
+        <Image src='/../public/images/icon-close.svg' height={16} width={16}/>
         </div>
         </li>
         <li onClick ={hide}>
