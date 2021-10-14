@@ -10,13 +10,13 @@ const PlusMinusCartPrice = ({product}) => {
       <div className="logicbuttons">
       <div className="plus-minus-container">
             <div className="minus" onClick={()=>dec(itemCount)}>
-            <Image src='/icon-minus.svg' height='8px' width='15px' alt="minus"/>
+            <Image onClick={()=>dec(itemCount)} src='/icon-minus.svg' height='8px' width='15px' alt="minus"/>
             </div>
             <div className="count">
             {itemCount}
             </div>
             <div className="plus" onClick={()=>inc()}>
-            <Image src='/icon-plus.svg' height='15px' width='15px' alt="plus"/>
+            <Image onClick={()=>inc()} src='/icon-plus.svg' height='15px' width='15px' alt="plus"/>
             </div>
         </div>
       

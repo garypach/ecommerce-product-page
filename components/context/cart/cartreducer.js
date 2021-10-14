@@ -2,6 +2,19 @@ import { SHOW_HIDE_CART, ADD_TO_CART, REMOVE_ITEM, INC, DEC } from "../types";
 
 const CartReducer = (state, action) => {
   switch (action.type) {
+    case INC: {
+      return {
+        ...state,
+        itemCount: state.itemCount++
+      };
+    }
+    case DEC: {
+      return {
+        ...state,
+        itemCount: state.itemCount--
+      };
+    }
+
     case SHOW_HIDE_CART: {
       return {
         ...state,
@@ -22,19 +35,7 @@ const CartReducer = (state, action) => {
         ),
       };
     }
-    case INC: {
-      return {
-        ...state,
-        itemCount: state.itemCount++
-      };
-    }
-    case DEC: {
-      return {
-        ...state,
-        itemCount: state.itemCount--
-      };
-    }
-
+    
     default:
       return state;
   }

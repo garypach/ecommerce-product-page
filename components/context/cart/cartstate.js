@@ -26,8 +26,9 @@ const CartState = ({ children }) => {
     dispatch({ type: REMOVE_ITEM, payload: id });
   };
 
-  const inc = () => {
+  const inc = (e) => {
     dispatch({ type: INC});
+    console.log(e)
   };
   const dec = (itemcount) => {
     if(itemcount !== 0){
