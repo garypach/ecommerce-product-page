@@ -1,7 +1,7 @@
 import PlusMinusCartPrice from "../header/buttons/plusminuscartprice";
 import SneakerDesc from "../sneakerdesc/sneakerdesc";
 import SneakerTitle from "../sneakertitle/sneakertitle";
-import products from "../data";
+import products from "../../data.js";
 
 const SneakerBox = () =>{
     return(
